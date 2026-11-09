@@ -202,3 +202,23 @@ If you use DeepLISA or its image-analysis workflow, please cite the associated d
 ## License
 
 Please add a clear `LICENSE` file before public distribution. Without an explicit license, no permission is granted for third-party copying, modification, or redistribution.
+
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+## Status and citation
+
+This repository is the analysis pipeline accompanying the dPAC-DeepLISA digital
+microchamber assay methodology; the methods manuscript is under review.
+If you use it in a publication, please cite this repository and state the tag used.
+
+## How to verify results
+
+1. Install dependencies from `requirements.txt` and run `python main.py` on a
+   single image or a folder.
+2. Open the overlay images and candidate table: every positive chamber should be
+   visually confirmable.
+3. Read the batch QC report and confirm image-level metrics (background,
+   saturation, focus) are within acceptable ranges.
