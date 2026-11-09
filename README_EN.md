@@ -1,8 +1,17 @@
 # DeepLISA
 
+[English](README_EN.md) ｜ [简体中文](README_CN.md)
+
 DeepLISA is an AI-assisted, physics-constrained image-analysis workflow for fluorescence microchamber readout. It converts fluorescence-positive chamber events into auditable positive counts, Poisson occupancy, and calibration-based concentration estimates. The workflow was developed for dPAC-DeepLISA microchamber analysis and can also serve as a reference framework for related digital immunoassay or digital CRISPR image-readout experiments.
 
 DeepLISA is research software. It is not a clinical diagnostic tool and does not provide clinical decision support.
+
+
+## 30-second fit check
+
+- **Who it is for**: anyone running digital immunoassay / digital CRISPR readouts who needs to verify each positive chamber instead of trusting an opaque number.
+- **What it solves**: turns fluorescence microchamber images into auditable counts — positive chambers K, Poisson occupancy lambda, concentration estimate — plus overlay images, a candidate table and a batch QC report.
+- **How to verify**: open the overlay and confirm every chamber counted as positive is visible there; spot-check a few rows of the candidate table; check the QC report for background, saturation and focus. If the overlay disagrees with the image, treat the run as invalid.
 
 ## Key Features
 
